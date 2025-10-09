@@ -14,6 +14,9 @@ if !(hyprctl clients | grep -q "$1") ; then
       ;;
     "discord")
       name="vesktop" 
+      ;;
+    "supProd")
+      name="superproductivity"
   esac
   hyprctl dispatch exec $name
 
